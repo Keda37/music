@@ -28,7 +28,7 @@ body {
 
 .music {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: url(../img/hfbg.png) left center no-repeat #f5f0ea;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,8 +41,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
   .music__info {
@@ -212,5 +211,23 @@ body {
 @media only screen and (max-height: 650px) {
   .music {
     background-size: contain; } }
+
+@media only screen and (max-width: 1150px) {
+  .music {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-image: none; }
+    .music__info {
+      width: 100%;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .music__slider {
+      margin-top: 20px;
+      width: 100%; }
+      .music__slider::before, .music__slider::after {
+        display: none; }
+  .slider {
+    margin-left: 0; } }
 
 /*# sourceMappingURL=style.css.map */
