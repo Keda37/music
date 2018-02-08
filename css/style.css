@@ -214,8 +214,10 @@ body {
 
 @media only screen and (max-width: 1150px) {
   .music {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     background-image: none; }
     .music__info {
       width: 100%;
