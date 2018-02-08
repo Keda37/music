@@ -76,8 +76,8 @@ body {
       transform: translate(-100%, -50%); }
     .music__slider:after {
       content: "";
-      width: 80px;
-      height: 380px;
+      width: 100px;
+      height: 500px;
       background-color: #f5f0ea;
       position: absolute;
       right: 100%;
